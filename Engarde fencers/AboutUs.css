@@ -1,0 +1,64 @@
+body {
+    background-image: url("Student3-Images/AboutUs/backgroundImage2.jpeg");
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+
+#About {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffffff;
+    padding-top: 150px;
+}
+
+
+.box {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member {
+    margin: 50px;
+    position:relative;
+    
+}
+
+.member img {
+    display: sqare;
+    width: 250px;
+    height: 300px;
+    border-radius: 3px;
+    transition: transform .2s;
+    border: 10px solid transparent;
+    padding: 10px;
+    border-image: url(Student3-Images/AboutUs/borderImage.jpg) 30% round;
+    
+}
+
+.member:hover img {
+    transform: scale(1.1);
+}
+
+.member .Info {
+    display: none;
+    position: absolute;
+    bottom: 100;
+    padding-top: 6%;
+    padding-bottom: 50px;
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.member:hover .Info {
+    display:block;
+}
+

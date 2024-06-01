@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="explore.css">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <nav class="nav"> 
+                <div class="navbar">
+                    <div class="logo"><img width="127px" src="logo.jpg" alt="logo"></div>
+                    <div class="box">
+                    <ul class="link">
+                        <li><a href="main.html" class="active"  >Home</a></li>
+                        <li><a href="shop.html" class="active">Shop</a></li>
+                        <li><a href="Quiz.html" class="active">Quiz</a></li>
+                        <li><a href="sitemap.html" class="active">Site Map</a></li>
+                        <li><a href="commenting.html" class="active">Comment</a></li>
+                        <li><a href="AboutUs.html" class="active">About us</a></li>
+                        <li><a href="explore.html" class="active" aria-current="page">Explore</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                    </ul> 
+                    </div>
+                    <form>
+                        <div class="input"> <input type="search" placeholder="search..."/>
+                        <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                    </form>
+                    <div class="tog">
+                        <i class="fa-solid fa-bars">
+    
+                        </i>
+                    </div>   
+     
+                </div>
+                <div class="dropDown ">
+                    <ul>
+                        <li><a href="main.html" class="active" aria-current="page">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="Quiz.html">Quiz</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                        <li><a href="commenting.html">Comment</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                    </ul>
+                    <ul class="social ">
+                        <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <form>
+                        <div class="in"> <input type="search" placeholder="search..."/>
+                        <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                    </form>
+    
+    
+    
+                </div>
+            </nav> 
+            
+     <section>
+           <div class="row">
+               <div class="card card1"><h5><a href="AdditionalContent 2.html">Thechinies</a></h5></div>
+               <div class="card card2"><h5><a href="Exlpore.html">Olympic</a></h5></div>
+               <div class="card card3"><h5><a href="AdditionalContent.html">Rules</a></h5></div>
+               <div class="card card4"><h5><a href="ExtraContentPage.html">Swords</a></h5></div>
+            </div>
+           </div>
+        </div>
+     </section> 
+     <footer>
+        <div class="rowF">
+            <div class="colF">
+                <img  src="logo.jpg" alt="logo" class="logoF">
+                <p>Come join us and unleash your inner athlete.
+                </p>
+
+            </div>
+            <div class="colF">
+                <h3>Office<div class="underline"><span></span></div></h3>
+                <p>GP square</p>
+                <p>baudhaloka mawatha</p>
+                <p>kollpiti</p>
+                <p class="email-id"><a href="mailto:engardefen@gmail.com">engardefen@gmail.com</a> </p>
+               
+            </div>
+            <div class="colF">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="commenting.html">Comment</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="colF">
+                <h3>Page Editor <div class="underline"><span></span></div></h3>
+                <p>Editor:-<span><a href="pageEditor 2.html">DEVHAN DODAMPAHALA</a></span></p>
+               
+                <div class="social-f">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="colF">
+               
+               <button onclick="topFunction()" href="main.html" id="back-to-top" title="Go to top">BACK TO TOP</button>
+                
+               
+               
+            </div>
+            
+        </div>
+        <hr>
+        <p class="copy-rights">Engard Fencer  © 2023-All rights reseverd</p>
+    </footer>
+    <script>
+        
+        const navbar=document.querySelector('.nav')
+const togBtn = document.querySelector('.tog')
+const togBtnIcon = document.querySelector('.tog i')
+const dropDownMenu = document.querySelector('.dropDown')
+
+window.addEventListener('scroll',()=>{
+    if(this.scrollY>=100){
+        navbar.classList.add('scrolled')
+    }else{
+        navbar.classList.remove('scrolled')
+    }
+})
+
+
+
+
+
+togBtn.onclick=function(){
+    dropDownMenu.classList.toggle('open')
+    
+    const isOpen=dropDownMenu.classList.contains('open')
+
+    togBtnIcon.classList= isOpen
+    ? 'fa-solid fa-xmark'
+    :'fa-solid fa-bars'
+    
+}
+
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+} else {
+    mybutton.style.display = "none";
+}
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script> 
+    </body>
+</html>

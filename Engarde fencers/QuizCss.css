@@ -1,0 +1,193 @@
+body {
+    background-image: url("Student3-Images/Quiz/fencing6.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    background-color: #8f8c8c;
+    color: #5e5e5e;
+    margin: 0;
+    padding-top: 100px;
+    list-style: square;
+}
+
+
+
+.divider {
+    height: 2px;
+    background-color: #111111;
+    margin: 50px 0;
+}
+
+.body {
+    width: 90%;
+    max-width: 800px;
+    max-height:100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    padding-bottom: 1px;
+    background-color: #393938;
+    border: 1px solid #140909;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#welcome{
+    padding-top: 2%;
+    background: linear-gradient(to bottom, #8f8c8c, #111111);
+    height:700px;
+
+}
+
+#welcome button{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: 42%;
+
+}
+
+#welcome h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1px;
+    color: #000000;
+
+}
+
+#welcome hr {
+    border: 0;
+    height: 1px;
+    background-color: #d2d2d2;
+    margin: 20px 0;
+}
+
+#welcome h2 {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    color: #000000;
+}
+
+#welcome ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    color: #d2d2d2;
+    
+}
+
+#welcome li {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#welcome b {
+    color: #8e1616;
+}
+
+#welcome p {
+    font-size: 1.5rem;
+    color: #a6a5a5;
+    text-align: center;
+}
+
+#timer{
+    background-color: #9c9c9c;
+    color: #c75353;
+    border: none;
+    font-size: 2rem;
+    border-radius: 0;
+    margin-top: 20px;
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#questionForm {
+    margin-top: 30px;
+}
+
+.body .form1 p {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.form1 span {
+    font-size: 2rem;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+}
+
+.form1 div {
+    margin-bottom: 30px;
+}
+
+.form1 label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #e1d1ff;
+    margin-left: 100px;
+    
+}
+
+.form1 a{
+    display: flex;
+    color: #d2d2d2;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+.form1 input[type="radio"] {
+    margin-right: 10px;
+    
+}
+
+.body button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    margin-left: 42.5%;
+
+}
+
+.body p{
+    text-align: center;
+    color: #ffffff;
+}
+
+#submitBtn:hover  {
+    background-color: #17e317;
+}
+
+
+/*CHANGE BACKGROUND COLOR ACCORDING TO  RESULT*/
+.excellent{
+    background-color: #01481e;
+}
+.good{
+    background-color: #023354;
+}
+.bad{
+    background-color: #982518 ;
+}
+
+

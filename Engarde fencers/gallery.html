@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="CSS/Images/logo.jpg" type="image/x-icon" />
+    <script src="gallery.js" defer></script>
+</head>
+<body>
+    <h1 class="heading" id="heading" style="color:white">ENGADE FENCERS</h1><br>
+    <nav class="nav"> 
+            <div class="navbar">
+                <div class="logo"><img width="127px" src="CSS/Images/logo.jpg" alt="logo"></div>
+                <div class="box">
+                <ul class="link">
+                    <li><a href="main.html" class="active">Home</a></li>
+                    <li><a href="Shop.html" class="active">Shop</a></li>
+                    <li><a href="Quiz.html"    class="active">Quiz</a></li>
+                    <li><a href="sitemap.html" class="active">Site Map</a></li>
+                    <li><a href="commenting.html"   class="active">Comment</a></li>
+                    <li><a href="AboutUs.html" class="active">About us</a></li>
+                    <li><a href="explore.html" class="active">Explore</a></li>
+                    <li><a href="gallery.com" aria-current="page" class ="active">Gallery</a></li>
+                </ul> 
+                </div>
+                <form>
+                    <div class="input"> <input type="search" placeholder="search..."/>
+                    <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                </form>
+                <div class="tog">
+                    <i class="fa-solid fa-bars">
+
+                    </i>
+                </div>   
+ 
+            </div>
+            <div class="dropDown ">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="Quiz.html">Quiz</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="commenting.html">Comment</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="Explore.html">Explore</a></li>
+                    <li><a href="gallery.com">Gallery</a></li>
+                </ul>
+                <ul class="social ">
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://m.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <form>
+                    <div class="in"> <input type="search" placeholder="search..."/>
+                    <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                </form>
+
+
+
+            </div>
+    </nav> 
+        <div class="gallery">
+            <img src="CSS/Images/pic1.jpg" alt="school" id="img1" />
+            <img src="CSS/Images/pic2.jpeg" alt="weapons" id="img2" />
+            <img src="CSS/Images/pic3.jpg" alt="championship" id="img3" />
+            <img src="CSS/Images/pic4.jpg" alt="champ" id="img4" />
+            <img src="CSS/Images/pic5.jpeg" alt="armour" id="img5" />
+        </div>
+
+        <div class="preview" id="preview">
+            <img src="Images/pic1" alt="default" id="preview-img" />
+            <div class="close-preview" onclick="closePreview()">
+                <i class="far fa-times-circle"></i>
+            </div>
+            <div id="description"></div>
+        </div>
+
+    
+    <div class="turnmaroon" id="bgmaroon" style="height:30px; width:30px; border: solid thin black; margin: 10px; float: left;">
+    </div>
+    <br><br>
+    <div class="turngrey" id="bggrey" style="height:30px; width:30px; border: solid thin black; margin: 10px; float: left;">
+    </div>
+    <br><br>
+    <div class="turnteal" id="bgteal" style="height:30px; width:30px; border: solid thin black; margin: 10px; float: left;">
+    </div>
+    <br><br>
+    <div class="turnrandom" id="bgrandom" style="height:30px; width:30px; border: solid thin black; margin: 10px; float: left;">
+    </div>
+    <div class="buttons">
+        <span class="btn" onclick="document.getElementById('preview').style.fontSize = '1em'">A</span>
+        <span class="btn" onclick="document.getElementById('preview').style.fontSize = '1.25em' ">A</span>
+        <span class="btn" onclick="document.getElementById('preview').style.fontSize = '1.5em' ">A</span>
+    </div>
+    <br><br>
+    <footer>
+        <div class="rowF">
+            <div class="colF">
+                <img  src="CSS/Images/logo.jpg" alt="logo" class="logoF">
+                <p>Come join us and unleash your inner athlete.
+                </p>
+
+            </div>
+            <div class="colF">
+                <h3>Office<div class="underline"><span></span></div></h3>
+                <p>GP square</p>
+                <p>Baudhaloka mawatha</p>
+                <p>Kollpitiya</p>
+                <p class="email-id">engardefen@gmail.com</p>
+               
+            </div>
+            <div class="colF">
+                <h3>Links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="home.com">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="sitemap.html">Quiz</a></li>
+                    <li><a href="sitemap.html">Site map</a></li>
+                    <li><a href="commenting.html">Comment</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="Explore.html">Explore</a></li>
+                    <li><a href="gallery.com">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="colF">
+                <h3>Page Editor <div class="underline"><span></span></div></h3>
+                <p>Editor:-<span> <a href="ranujitha.html">Ranujitha Sugathadasa</a></span></p>
+               
+                <div class="social-f">
+                    <ul>    
+                        <li><a href="www.facebook.com"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/login?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://m.youtube.com/"><i class="fab fa-youtube"></i></a></li>
+                    </ul>    
+                </div>
+            </div>
+            <div class = "colf">
+                <button onclick="topFunction()" href="main.html" id="back-to-top" title="Go to top">BACK TO TOP</button>
+            </div>
+        </div>
+        <hr>
+        <p class="copy-rights">Engard Fencer  © 2023-All rights reseverd</p>
+    </footer>
+    
+</body>
+</html>

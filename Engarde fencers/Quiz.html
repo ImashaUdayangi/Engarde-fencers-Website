@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz</title>
+
+    <!-- Title Icon displayed on tab -->
+    <link rel="icon" href="Student3-Images/Icon.jpg" type="image/x-icon">
+
+    <!-- CSS for Quiz Page and common elements -->
+    <link rel="stylesheet" type="text/css" href="QuizCss.css">
+    <link rel="stylesheet" type="text/css" href="common-styles.css">
+
+    <!-- JavaScripts for Quiz Page and Navigation Bar -->
+    <script src="QuizJavascript.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    </head>
+    
+
+
+    <body>
+        <a id="top"></a> <!-- anchor back to top-->
+
+        <!--Navigationbar begin-->
+        <nav class="nav"> 
+            <div class="navbar">
+                <div class="logo"><img width="127" src="Student3-Images/Icon.jpg" alt="logo"></div>
+                <div class="box">
+                <ul class="link">
+                    <li><a href="main.html" >Home</a></li>
+                    <li><a href="shop.html" >Shop</a></li>
+                    <li><a href="Quiz.html" class="active" aria-current="page">Quiz</a></li>
+                    <li><a href="sitemap.html" >Site Map</a></li>
+                    <li><a href="commenting.html" >Comment</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="ExtraContentPage.html" >Explore</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul> 
+                </div>
+                <form>
+                    <div class="input"> <input type="search" placeholder="search...">
+                    <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                </form>
+                <div class="tog">
+                    <i class="fa-solid fa-bars">
+
+                    </i>
+                </div>   
+ 
+            </div>
+            <div class="dropDown ">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="Quiz.html" class="active" aria-current="page">Quiz</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="commenting.html">Comment</a></li>
+                    <li><a href="AboutUs.html">About us</a></li>
+                    <li><a href="ExtraContentPage.html" >Explore</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <ul class="social ">
+                    <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <form>
+                    <div class="in"> <input type="search" placeholder="search...">
+                    <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                </form>
+
+
+
+            </div>
+        </nav> 
+
+        <!-- Displaying Quiz Information -->
+        <div class="divider" id="divider"></div>
+        <div class="body" id="bodyID">
+            <div id="welcome">
+                <h1> W E L C O M E </h1>
+                <hr>
+                <br>
+
+                <h2>Quiz Instructions ! </h2> 
+                <br>
+
+                <ul>
+                    <li>This Quiz contains 10 questions.</li>
+                    <li>You will score <b>2 marks </b> for each correct answer.And total of 20 points.</li>
+                    <li>You will lose <b>1 mark </b>for each incorrect answer.</li>
+                    <li>Final result will be displayed at the end of the quiz.</li>
+                    <li>You have <b>1 minute</b> time limit to complete the quiz.So think fast and answer correctly!</li>
+                </ul>
+
+                <br>
+                <p><strong>Are You READY?</strong></p>
+
+                <p><strong>Click on START to start the Quiz</strong> </p>
+
+                <p><strong>GOOD LUCK!!</strong></p>
+                <br>
+                <button id="button" onclick=begin();countdown();backtotop()>START</button>
+            </div>
+            
+    
+    
+            <!--Start of Form that includes all questions with answer options-->
+            <form class="form1" name="question" id="questionForm">
+    
+                
+                <!--Span tag to display timer countdown-->
+                <span id="timer"></span>
+                <br>
+                <div>
+                    <p class="Q"><strong>Q1 : How many different types of weapons are used in fencing?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q1" value="incorrect">4</label><br> <!--br tag to display radio button answers vertically-->
+                    <label>
+                        <input type="radio" name="q1" value="correct">3</label><br>
+                    <label>
+                        <input type="radio" name="q1" value="incorrect">2</label><br>
+                    <label>
+                        <input type="radio" name="q1" value="incorrect">6</label><br>
+                </div>
+
+                <div>
+                    <p class="Q"><strong>Q2: Which weapon can a double touch be scored with?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q2" value="correct">Epee</label><br>
+                    <label>
+                        <input type="radio" name="q2" value="incorrect">Dagger</label><br>
+                    <label>
+                        <input type="radio" name="q2" value="incorrect">Rapier</label><br>
+                    <label>
+                        <input type="radio" name="q2" value="incorrect">Harpe</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q3: What is not worn during an epee bout?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q3" value="correct">A lame</label><br>
+                    <label>
+                        <input type="radio" name="q3" value="incorrect">Knickers</label><br>
+                    <label>
+                        <input type="radio" name="q3" value="incorrect">A jacket</label><br>
+                    <label>
+                        <input type="radio" name="q3" value="incorrect">plastron</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q4: How many competitive scenes is fencing divided into?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q4" value="incorrect">5</label><br>
+                    <label>
+                        <input type="radio" name="q4" value="incorrect">7</label> <br>
+                    <label>
+                        <input type="radio" name="q4" value="correct">3</label><br>
+                    <label>
+                        <input type="radio" name="q4" value="incorrect">9</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q5: Which of the following bodies governs the fencing?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q5" value="correct">FIE</label><br>
+                    <label>
+                        <input type="radio" name="q5" value="incorrect">FILA</label><br>
+                    <label>
+                        <input type="radio" name="q5" value="incorrect">USFA</label><br>
+                    <label>
+                        <input type="radio" name="q5" value="incorrect">UN</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q6: What is the maximum weight of the foil weapon?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q6" value="incorrect">450 grams</label><br>
+                    <label>
+                        <input type="radio" name="q6" value="incorrect">600 grams</label><br>
+                    <label>
+                        <input type="radio" name="q6" value="correct">500 grams</label><br>
+                    <label>
+                        <input type="radio" name="q6" value="incorrect">800 grams</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q7: What is the maximum weight of the epee weapon?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q7" value="correct">775 grams</label><br>
+                    <label>
+                        <input type="radio" name="q7" value="incorrect">700 grams</label><br>
+                    <label>
+                        <input type="radio" name="q7" value="incorrect">770 grams</label><br>
+                    <label>
+                        <input type="radio" name="q7" value="incorrect">900 grams</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q8: Where is the headquarter of the fencing organization located?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q8" value="incorrect">Brussels, Belgium</label><br>
+                    <label>
+                        <input type="radio" name="q8" value="incorrect">Geneva, Switzerland</label><br>
+                    <label>
+                        <input type="radio" name="q8" value="correct">Lusanne, Swtizerland</label><br>
+                    <label>
+                        <input type="radio" name="q8" value="incorrect">Flemish, Belgium</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q9: What does "3" indicate in the Four Count lunge drill?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q9" value="incorrect">Disengage</label><br>
+                    <label>
+                        <input type="radio" name="q9" value="correct">Recovery</label><br>
+                    <label>
+                        <input type="radio" name="q9" value="incorrect">Extension</label><br>
+                    <label>
+                        <input type="radio" name="q9" value="incorrect">Lunge</label><br>
+                </div>
+                <div>
+                    <p class="Q"><strong>Q10: What is the target area for the épée fencing weapon?</strong></p>
+                    <br>
+                    <label>
+                        <input type="radio" name="q10" value="correct">The entire body</label><br>
+                    <label>
+                        <input type="radio" name="q10" value="incorrect">The torso only</label><br>
+                    <label>
+                        <input type="radio" name="q10" value="incorrect">The head and arms only</label><br>
+                    <label>
+                        <input type="radio" name="q10" value="incorrect">The legs and feet only</label><br>
+                </div>
+                <br>
+
+                <!--ANCHOR TO TOP-->
+                <a href="#top">Back to top of page</a>
+
+                
+            </form> <!--end of form-->
+            <br>
+
+            <!--submit button-->
+            <button onclick=result();correctAnswers() id="submitBtn">Submit</button>
+
+            <div>
+                <!--PARAGRAPH TAGS WHETHER USER ANSWERS ARE CORRECT OR INCORRECT, TOTAL POINTS, With TIME TAKEN-->
+
+                <div>
+                    <p id="score"></p>
+                    <br>
+                    <p id="answr1"></p>
+                    <p id="answr2"></p>
+                    <p id="answr3"></p>
+                    <p id="answr4"></p>
+                    <p id="answr5"></p>
+                    <p id="answr6"></p>
+                    <p id="answr7"></p>
+                    <p id="answr8"></p>
+                    <p id="answr9"></p>
+                    <p id="answr10"></p>
+                    <br>
+                    <p id="time"></p>
+                    <br>
+
+                    <p id="repeat0">Click on Restart to Try Again</p>
+
+                    <!--BUTTON TO RETAKE THE QUIZ-->
+                    <button id="repeat" onclick=repeat();backtotop()>Restart</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--Footer part begin-->
+        <footer>
+            <div class="rowF">
+                <div class="colF">
+                    <img  src="Student3-Images/Icon.jpg" alt="logo" class="logoF">
+                    <p>Come join us and unleash your inner athlete.
+                    </p>
+
+                </div>
+                <div class="colF">
+                    <h3>Office<div class="underline"><span></span></div></h3>
+                    <p>GP square</p>
+                    <p>baudhaloka mawatha</p>
+                    <p>kollpiti</p>
+                    <p class="email-id">engardefen@gmail.com</p>
+                   
+                </div>
+                <div class="colF">
+                    <h3>Links<div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="Quiz.html">Quiz</a></li>
+                        <li><a href="commenting.html">Comment</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="ExtraContentPage.html" >Explore</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="colF">
+                    <h3>Page Editor <div class="underline"><span></span></div></h3>
+                    <p>Editor:-<span><a href="ImashaPageEditor.html">Imasha Udayangi</a></span></p>
+                   
+                    <div class="social-f">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                       </ul>
+                    </div>
+                </div>
+                <div class="colF">
+                   
+                   <button onclick="topFunction()" href="main.html" id="back-to-top" title="Go to top">BACK TO TOP</button>
+                    
+                   
+                   
+                </div>
+                
+            </div>
+            <hr>
+            <p class="copy-rights">Engard Fencer  © 2023-All rights reseverd</p>
+        </footer>
+
+        <!--Link to common-style.js-->
+        <script src="common-styles.js"></script>
+
+    </body>
+
+</html>    

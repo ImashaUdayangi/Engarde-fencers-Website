@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="commenting.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+        
+            <nav class="nav"> 
+                <div class="navbar">
+                    <div class="logo"><img width="127" src="logo.jpg" alt="logo"></div>
+                    <div class="box">
+                    <ul class="link">
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="Quiz.html">Quiz</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                        <li><a href="commenting.html">Comment</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="explore.html" class="active">Explore</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                    </ul> 
+                    </div>
+                    <form>
+                        <div class="input"> <input type="search" placeholder="search..."/>
+                        <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                    </form>
+                    <div class="tog">
+                        <i class="fa-solid fa-bars">
+
+                        </i>
+                    </div>   
+
+                </div>
+                <div class="dropDown ">
+                    <ul>  
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="Quiz.html">Quiz</a></li>
+                        <li><a href="sitemap.html">Site Map</a></li>
+                        <li><a href="commenting.html">Comment</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="explore.html" class="active">Explore</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                    </ul>  
+                    <ul class="social ">
+                        <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <form>
+                        <div class="in"> <input type="search" placeholder="search..."/>
+                        <button type="submit"><i class="fas fa-search"  ></i></button></div>
+                    </form>
+
+
+
+                </div>
+                
+            </nav> 
+        </header> 
+        
+         
+        
+        <main>
+            <div class="container">
+                <div class="comments">Comment</div>
+                <form action="" method="POST" class="form" id="form">
+                    <div class="input-box">
+                        <label>Full Name</label>
+                        <input id="full-name" type="text" placeholder="Enter full name" name="Full_Name"  />
+                        <div class="error"></div>
+                       
+                    </div>
+            
+                    <div class="input-box">
+                        <label>Email Address</label>
+                        <input type="text" placeholder="Enter email address" id="email-field" name="Email"  />
+                        <div class="error"></div>
+                        
+                    </div>
+            
+                    
+                    <div class="selection">
+                    <h3>Please give your ratiing</h3>
+                    <div class="selection-option" id="selection-option">
+                        <div class="selector">
+                            <input type="radio" id="check-male" name="selector" checked />
+                            <label for="check-male">I hate it😡</label>
+                        </div>
+                        <div class="selector">
+                            <input type="radio" id="check-female" name="selector" />
+                            <label for="check-female">I dont like it😠</label>
+                        </div>
+                        <div class="selector">
+                            <input type="radio" id="check-other" name="selector" />
+                            <label for="check-other">it's good🙂</label>
+                        </div>
+                        <div class="selector">
+                            <input type="radio" id="check-other" name="selector" />
+                            <label for="check-other">it's awesome😎</label>
+                        </div>
+                        <div class="selector">
+                            <input type="radio" id="check-other" name="selector" />
+                            <label for="check-other">I love it🥰</label>
+                        </div>
+                    </div>
+                   
+                    </div>
+                    <div class="input-box address">
+                   
+                    <textarea id="text-area" name="comment" rows="4" cols="50" placeholder="describe your comments" ></textarea>
+                    
+                   
+                    <div class="error"></div>
+                    <div class="column">
+                        <div class="select-box">
+                        <select>
+                            <option hidden>which method you use </option>
+                            <option>Phone</option>
+                            <option>Web chat</option>
+                            <option>website</option>
+                            <option>Social media</option>
+                            <option>Email</option>
+                        </select>
+                        </div>
+                        <div class="select-box">
+                            <select>
+                            <option hidden>which method you prefer</option>
+                            <option>Phone</option>
+                            <option>Web chat</option>
+                            <option>website</option>
+                            <option>Social media</option>
+                            <option>Email</option>
+                            </select>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    </div>
+                     <button type="submit" class="submit-btn" onclick=" fieldDope()">Submit</button>
+                   
+                    
+                        <div class="messeasge">
+                            <div class="sucess" id="sucess">
+                                your message went
+                            </div>
+                            <div class="danger" id="danger">
+                                fielsd canot be empty
+                            </div> 
+                        </div>
+                        <div class="form-popup" id="myForm">
+                            <form action="/action_page.php" class="form-container">
+                                <img src="tick.png" >
+                                <h2>Thank you!</h2>
+                               <button type="submit" class="btn" onclick="sendEmail()"><a href="commenting.html">Ok</a> </button>
+                               
+                            </form>
+                         </div>
+                   
+                        
+                     
+                    </div>
+
+
+                    
+                </form>
+            </div>
+       </main> 
+         
+        
+        
+        <footer>
+            <div class="rowF">
+                <div class="colF">
+                    <img  src="logo.jpg" alt="logo" class="logoF">
+                    <p>Come join us and unleash your inner athlete.
+                    </p>
+
+                </div>
+                <div class="colF">
+                    <h3>Office<div class="underline"><span></span></div></h3>
+                    <p>GP square</p>
+                    <p>baudhaloka mawatha</p>
+                    <p>kollpiti</p>
+                    <p class="email-id"><a href="mailto:engardefen@gmail.com">engardefen@gmail.com</a> </p>
+                   
+                </div>
+                <div class="colF">
+                    <h3>Links<div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="Quiz.html">Quiz</a></li>
+                        <li><a href="commenting.html">Comment</a></li>
+                        <li><a href="AboutUs.html">About us</a></li>
+                        <li><a href="explore.html" class="active">Explore</a></li>
+                        <li><a href="gallery.html" class="active">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="colF">
+                    <h3>Page Editor <div class="underline"><span></span></div></h3>
+                    <p>Editor:-<span><a href="pageEditor 2.html">DEVHAN DODAMPAHALA</a></span></p>
+                   
+                    <div class="social-f">
+                        <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                       <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </div>
+                </div>
+                <div class="colF">
+                   
+                    <button onclick="topFunction()" href="main.html" id="back-to-top" title="Go to top">BACK TO TOP</button>
+                     
+                    
+                    
+                 </div>
+                
+            </div>
+            <hr>
+            <p class="copy-rights">Engard Fencer  © 2023-All rights reseverd</p>
+        </footer>
+        <script src="commenting.js"></script>   
+
+    </body>
+</html>    
+          
